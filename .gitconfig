@@ -1,0 +1,27 @@
+[push]
+	default = simple
+
+[alias]
+	b = branch
+	bD = branch -D
+	bs = branch -d
+	co = checkout
+	cp = cherry-pick
+
+	fdiff = diff --stat
+	fdiffm = !git it && git diff --stat master
+	it = !git co master && git fetch upstream && git reset --hard upstream/master && git push && git co -
+	logp = log --graph --oneline
+	pullr = pull --rebase
+	st = status
+	s = status
+	pushboth = !git push && git push upstream
+[user]
+	name = Gabe Gonzalez
+	email = gabegonzalez24@gmail.com
+	# email = geogonzalez@groupon.com
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
