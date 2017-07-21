@@ -22,6 +22,3 @@ GIT_PROMPT_END="\n-> "
 ###########
 # Aliases #
 ###########
-
-alias g="git"
-alias s="status"

@@ -16,10 +16,10 @@
 	st = status
 	s = status
 	pushboth = !git push && git push upstream
+
 [user]
 	name = Gabe Gonzalez
 	email = gabegonzalez24@gmail.com
-	# email = geogonzalez@groupon.com
 
 [filter "lfs"]
 	clean = git-lfs clean %f
